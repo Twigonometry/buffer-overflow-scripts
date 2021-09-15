@@ -1,8 +1,12 @@
 import socket
 
-input = "A" * 146
-input += "B" * 4
-input += "C" * 16
+filler = "A" * 146
+eip = "B" * 4
+offset = "C" * 4
+buffer = "D" * 500
+line_feed = "\n"
+
+input = filler + eip + offset + buffer + line_feed
 
 input = input.encode("utf-8")
 print(input)
